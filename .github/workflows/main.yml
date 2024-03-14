@@ -1,12 +1,14 @@
 name: CI
 
 on:
+
+
   push:
     branches: master
-
+ workflow_dispatch:
 env:
   BUILD_OUTPUT: 'build/Build/Products/Release'
-
+  
 jobs:
 
   build:
